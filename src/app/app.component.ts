@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet} from '@angular/router';
-import { HomeComponent } from './pages/home/home.component'; // Confirma la ruta correcta
+import { RouterOutlet } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component'; 
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, RouterModule], // Aquí debe estar HomeComponent
+  imports: [RouterOutlet, HomeComponent, FooterComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
