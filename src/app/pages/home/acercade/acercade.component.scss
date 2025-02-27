@@ -1,0 +1,67 @@
+.cuerpo-portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid red;
+  
+    .seccion-superior {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch; 
+      width: 100%;
+      gap: 20px;
+  
+      .recuadro {
+        flex: 1;
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+  
+      .foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+  
+        .imagen-perfil {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+  
+      .recuadro-acerca {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+  
+        h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 16px;
+          color: #666;
+        }
+      }
+    }
+  
+    .seccion-inferior {
+      margin-top: 40px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
