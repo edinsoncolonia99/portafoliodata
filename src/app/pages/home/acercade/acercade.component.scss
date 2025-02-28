@@ -1,67 +1,66 @@
 .cuerpo-portafolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 80px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 80px auto 0;
 
-  
-    .seccion-superior {
+  .seccion-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 20px;
+
+    .recuadro {
+      flex: 1;
       display: flex;
-      justify-content: space-between;
-      align-items: stretch; 
-      width: 100%;
-      gap: 20px;
-  
-      .recuadro {
-        flex: 1;
-        background: #f5f5f5;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
-  
-      .foto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-  
-        .imagen-perfil {
-          max-width: 100%;
-          height: auto;
-          border-radius: 10px;
-        }
-      }
-  
-      .recuadro-acerca {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-  
-        h2 {
-          font-size: 24px;
-          margin-bottom: 10px;
-        }
-        p {
-          font-size: 30px;
-          color: #666;
-        }
-      }
+      justify-content: center;
+      align-items: center;
+      min-height: 350px;
     }
-  
-    .seccion-inferior {
-      margin-top: 40px;
+
+    .foto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      text-align: center;
+      height: 100%;
+    }
+
+    .imagen-perfil {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ddd;
+    }
+
+    .recuadro-acerca {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+        text-align: justify;
+      }
     }
   }
-  
+
+  .seccion-inferior {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
